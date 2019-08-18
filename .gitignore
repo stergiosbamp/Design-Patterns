@@ -1,5 +1,5 @@
 *.class
 
-/.idea
+.idea/
 
-DesignPatterns.iml
+gDesignPatterns.iml
