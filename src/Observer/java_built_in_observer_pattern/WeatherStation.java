@@ -1,16 +1,16 @@
-package Observer;
+package Observer.java_built_in_observer_pattern;
 
 public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay currentConditionsDisplay = new
                 CurrentConditionsDisplay(weatherData);
-        HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
+        ForecastDisplay forecastDisplay =
+                new ForecastDisplay(weatherData);
 
 //        To be implemented the same way as Observers
-//
 //        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
-//        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+
 
         // initial conditions
         weatherData.setMeasurements(80, 65, 30.4f);
